@@ -1,0 +1,17 @@
+{
+  "name": "Zeppelin Development",
+
+  "dockerComposeFile": "../docker-compose.development.yml",
+  "initializeCommand": "docker compose -f ./docker-compose.development.yml up -d --wait",
+
+  "service": "devenv",
+  "remoteUser": "dev",
+  "workspaceFolder": "/workspace/zeppelin",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar"
+      ]
+    }
+  }
+}

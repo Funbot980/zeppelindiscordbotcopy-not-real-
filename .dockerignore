@@ -1,0 +1,53 @@
+**/.git
+**/.github
+**/.idea
+**/.devcontainer
+
+/docker/development/data
+/docker/production/data
+
+**/node_modules
+**/dist
+**/.pnpm-store
+**/.docker
+
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.clinic
+**/.clinic-bot
+**/.clinic-api
+
+# dotenv environment variables file
+**/*.env
+**/.env
+**/.env.*
+!**/.env.example
+
+# windows folder options
+**/desktop.ini
+
+# Misc
+**/npm-ls.txt
+**/npm-audit.txt
+**/.cache
+
+# Debug files
+**/*.debug.ts
+**/*.debug.js
+/debug
+
+**/.vscode
+
+config-errors.txt
+/config-schema.json
+
+**/*.tsbuildinfo
+
+**/.claude
+**/.codex
+**/.opencode
+
+/config-checker
+/presetup-configurator

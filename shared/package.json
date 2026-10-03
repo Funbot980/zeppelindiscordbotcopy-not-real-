@@ -1,0 +1,26 @@
+{
+  "name": "@zeppelinbot/shared",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*.js": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "pnpm run build && ava"
+  },
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "typescript": "catalog:ts7"
+  },
+  "ava": {
+    "files": [
+      "dist/**/*.test.js"
+    ]
+  }
+}

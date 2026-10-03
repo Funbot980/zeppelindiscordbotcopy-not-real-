@@ -1,0 +1,36 @@
+{
+  "name": "zeppelinclone1",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:backend": "pnpm --filter '@zeppelinbot/backend...' run build",
+    "build:dashboard": "pnpm --filter '@zeppelinbot/dashboard...' run build",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "run:migrate": "cd backend && pnpm run migrate",
+    "run:bot": "cd backend && pnpm run start-bot-prod",
+    "run:api": "cd backend && pnpm run start-api-prod",
+    "run:dashboard": "cd dashboard && node serve.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "oxfmt": "^0.59.0",
+    "oxlint": "^1.74.0",
+    "typescript": "catalog:ts7"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.0.0",
+      "onFail": "download"
+    }
+  }
+}
